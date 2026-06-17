@@ -6,6 +6,19 @@
 
 * { box-sizing: border-box; }
 
+@media screen and (orientation: portrait) {
+  html {
+    width: 100vh;
+    height: 100vw;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform-origin: left top;
+    transform: rotate(90deg);
+    overflow-x: hidden;
+  }
+}
+
 body {
   margin: 0;
   min-width: 320px;
